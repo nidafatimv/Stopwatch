@@ -74,9 +74,9 @@ function reset() {
     START_STOP_BTN.addEventListener('click', start)
     clearInterval(timer)
     
-    let hours = 0
-    let minutes = 0
-    let seconds = 0
+    hours = 0
+    minutes = 0
+    seconds = 0
     localStorage.setItem('time', JSON.stringify({ hours, minutes, seconds }))
     
     HOURS_DISPLAY.innerText = String(hours).padStart(2, '0')
