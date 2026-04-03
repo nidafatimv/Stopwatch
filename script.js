@@ -73,11 +73,12 @@ function reset() {
     START_STOP_BTN.removeEventListener('click', stop)
     START_STOP_BTN.addEventListener('click', start)
     clearInterval(timer)
+    localStorage.setItem('time', JSON.stringify({ hours, minutes, seconds }))
     
     hours = 0
     minutes = 0
     seconds = 0
-    localStorage.setItem('time', JSON.stringify({ hours, minutes, seconds }))
+
     
     HOURS_DISPLAY.innerText = String(hours).padStart(2, '0')
     MINUTES_DISPLAY.innerText = String(minutes).padStart(2, '0')
