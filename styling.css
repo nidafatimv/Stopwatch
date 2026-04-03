@@ -1,0 +1,41 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body::selection{
+    background-color: grey;
+}
+
+#stopwatch {
+    font-size: 50px;
+}
+
+#start-stop-btn, #reset-btn {
+    border: none;
+    height: 40px;
+    width: 90px;
+    margin-inline: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#start-stop-btn {
+    background-color: black;
+    color: white;
+}
+
+#reset-btn {  
+    background-color: rgb(193, 193, 193);
+    color: black;
+}
+
+#start-stop-btn:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+#reset-btn:hover {
+    background-color: rgb(181, 181, 181);
+    color: rgb(26, 26, 26);
+}
+
+
